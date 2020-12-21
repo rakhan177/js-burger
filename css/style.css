@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+section > .box-checkbox{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.box-checkbox > .checkbox-list{
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+}

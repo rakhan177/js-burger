@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>js-burger</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- contenitore pagina -->
+    <div class="container">
+      <!-- header -->
+      <header>
+        <h1>Create your burger</h1>
+      </header>
+      <!-- /header -->
+      <!-- main -->
+      <main>
+        <!-- sezione 1 -->
+        <section>
+          <input type="text" id="name-burger" placeholder="Name your burger">
+        </section>
+        <!-- /sezione 1 -->
+        <!-- sezione2 -->
+        <section>
+          <h2>Ingredients</h2>
+          <div class="box-checkbox">
+            <div>
+              <div>
+                Cheese
+                <input type="checkbox" name="check-list" value="10" class="check-elements">
+              </div>
+              <div>
+                Egg
+                <input type="checkbox" name="check-list" value="10" class="check-elements">
+              </div>
+              <div>
+                Mustard
+                <input type="checkbox" name="check-list" value="10" class="check-elements">
+              </div>
+            </div>
+            <div>
+              <div>
+                Tomato
+                <input type="checkbox" name="check-list" value="10" class="check-elements">
+              </div>
+              <div>
+                Lettuce
+                <input type="checkbox" name="check-list" value="10" class="check-elements">
+              </div>
+              <div>
+                Ketchup
+                <input type="checkbox" name="check-list" value="10" class="check-elements">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /sezione 2 -->
+        <!-- sezione 3 -->
+        <section>
+          <div id="coupon">Discount coupon
+            <input type="text" placeholder="12354ABCDEF">
+          </div>
+        </section>
+        <!-- /sezione 3 -->
+        <section>
+          <button id="button" type="submit" name="button">Calculate</button>
+        </section>
+      </main>
+      <!-- /main -->
+      <!-- footer -->
+      <footer>
+        <div>Your price</div>
+        <div id="price">50 euro</div>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <!-- /contenitore pagina -->
+    <!-- script js -->
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
