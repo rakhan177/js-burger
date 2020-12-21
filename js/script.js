@@ -6,7 +6,7 @@ var button = document.getElementById('button');
 var price = document.getElementById('price');
 // creao lista array con i coupon possibili
 var arrCoupon = ['12354ABCDEb', '12354ABCDEo', '12354ABCDEq', '12354ABCDEv', '12354ABCDEm'];
-// dichiaro variabile di controllo checkbox impostata a 0
+// dichiaro variabile di controllo checkbox x verifica impostata a 0
 var counter = 0;
 //dichiaro variabile total alla quale si sommeranno i vari ingredienti
 var total = 50;
