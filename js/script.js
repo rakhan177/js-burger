@@ -6,7 +6,6 @@ var button = document.getElementById('button');
 var price = document.getElementById('price');
 // creao lista array con i coupon possibili
 var arrCoupon = ['12354ABCDEb', '12354ABCDEo', '12354ABCDEq', '12354ABCDEv', '12354ABCDEm'];
-
 // dichiaro variabile di controllo checkbox impostata a 0
 var counter = 0;
 //dichiaro variabile total alla quale si sommeranno i vari ingredienti
@@ -33,10 +32,13 @@ button.addEventListener('click', function() {
   if (counter < 2) {
     alert('La prego di selezionare almeno due ingredienti.');
   }
+  // controllo se l utente ha inserito un coupon con un ciclo for
+  for(var i = 0; i < arrCoupon.length; i++){
+    // se il coupon inserito è uguale a uno della lista appilico lo sconto a total
+    if(coupon.value === arrCoupon[i]){
+      total = total - (total * 20 / 100);
+    }
+  }
   // stampo all' utente il prezzo finale
   price.innerHTML = total +" "+ 'euro';
-  
-
-
-
 });
