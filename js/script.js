@@ -17,7 +17,8 @@ button.addEventListener('click', function() {
     alert('Inserire nome burger.');
   }
   /*altrimenti avvio le operazioni*/
-  // ad ogni click total torna a 50 altrimenti continuerebba ad aumentare
+  // ad ogni click total torna a 50 altrimenti continuerebba ad aumentare, stessa cosa vale per counter.
+  counter = 0;
   total = 50;
   // creo ciclo for per verificare i checkbox selezionati dall' utente
   for (var i = 0; i < checkElements.length; i++) {
